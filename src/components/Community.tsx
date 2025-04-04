@@ -10,24 +10,22 @@ const Community = () => {
     { label: "Projects Built", value: "100+" }
   ];
 
-  const testimonials = [
+  const bullishReasons = [
     {
-      quote: "Succinct Labs has revolutionized how we think about blockchain scaling. Their ZK technology has allowed us to build applications we never thought possible.",
-      author: "Jane Doe",
-      title: "CTO at BlockchainX",
-      avatar: "https://i.pravatar.cc/100?img=1"
+      title: "Revolutionary ZK Technology",
+      description: "Succinct's zero-knowledge proof technology enables unprecedented scalability and security for blockchain applications while maintaining decentralization."
     },
     {
-      quote: "The developer experience with Succinct's tools is unmatched. We've been able to launch our dApp with significantly lower costs and higher throughput.",
-      author: "John Smith",
-      title: "Lead Developer at DeFi Protocol",
-      avatar: "https://i.pravatar.cc/100?img=2"
+      title: "Cross-Chain Compatibility",
+      description: "Build once and deploy across multiple blockchain networks with Succinct's unified ZK framework, reducing development time and costs."
     },
     {
-      quote: "Working with the Succinct Labs community has been incredible. The support and collaboration have accelerated our development timeline considerably.",
-      author: "Alex Johnson",
-      title: "Founder of ZK Application",
-      avatar: "https://i.pravatar.cc/100?img=3"
+      title: "Developer-First Approach",
+      description: "Comprehensive SDK, extensive documentation, and active developer community make integrating ZK proofs accessible to all skill levels."
+    },
+    {
+      title: "Real-World Applications",
+      description: "Already powering solutions in DeFi, gaming, identity management, and more with proven success stories across various industries."
     }
   ];
 
@@ -54,20 +52,12 @@ const Community = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Community Testimonials</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-secondary/50 border border-white/10 rounded-lg p-6">
-                <div className="text-white/80 italic mb-6">"{testimonial.quote}"</div>
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
-                    <img src={testimonial.avatar} alt={testimonial.author} className="h-full w-full object-cover" />
-                  </div>
-                  <div>
-                    <div className="font-medium">{testimonial.author}</div>
-                    <div className="text-sm text-white/70">{testimonial.title}</div>
-                  </div>
-                </div>
+          <h3 className="text-2xl font-bold mb-8 text-center gradient-text">Why People Are Bullish on Succinct Labs</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {bullishReasons.map((reason, index) => (
+              <div key={index} className="bg-secondary/50 border border-white/10 rounded-lg p-6 card-hover">
+                <h4 className="text-xl font-bold mb-3 gradient-text">{reason.title}</h4>
+                <p className="text-white/80">{reason.description}</p>
               </div>
             ))}
           </div>
