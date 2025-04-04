@@ -1,23 +1,19 @@
 
 import React from 'react';
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Chains from '@/components/Chains';
 import Technology from '@/components/Technology';
-import Community from '@/components/Community';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const TechnologyPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      <Hero />
-      <Chains />
-      <Technology />
-      <Community />
+      <div className="pt-24">
+        <Technology />
+      </div>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default TechnologyPage;
