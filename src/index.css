@@ -14,7 +14,7 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 252 87% 67%;
+    --primary: 326 100% 55%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 3.7% 15.9%;
@@ -23,8 +23,8 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 265 89% 78%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 326 100% 84%;
+    --accent-foreground: 240 5.9% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -37,14 +37,14 @@
 
   body {
     @apply bg-background text-foreground antialiased overflow-x-hidden;
-    background: radial-gradient(ellipse at top, rgba(38, 25, 95, 0.2), transparent),
-                radial-gradient(ellipse at bottom, rgba(11, 27, 103, 0.2), transparent);
+    background: radial-gradient(ellipse at top, rgba(217, 0, 147, 0.2), transparent),
+                radial-gradient(ellipse at bottom, rgba(255, 28, 173, 0.2), transparent);
     background-attachment: fixed;
   }
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-succinct-pink to-succinct-light-pink bg-clip-text text-transparent;
 }
 
 .gradient-border {
@@ -57,7 +57,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  background: linear-gradient(to right, #FF1CAD, #FFADDF);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -78,7 +78,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.2), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 28, 173, 0.2), transparent 70%);
   z-index: -1;
   filter: blur(60px);
 }
