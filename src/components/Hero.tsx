@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -9,7 +8,7 @@ const Hero = () => {
       {/* Background Logo Image with Blur */}
       <div className="absolute inset-0 z-0 opacity-20">
         <img
-          src="/lovable-uploads/d825ac29-91e4-48db-a931-cbb357c0a165.png"
+          src="/succinctlogo/hero-image.png"
           alt="Succinct Labs Logo Background"
           className="w-full h-full object-cover scale-150 blur-lg"
         />
